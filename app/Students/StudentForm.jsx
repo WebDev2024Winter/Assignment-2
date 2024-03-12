@@ -9,10 +9,9 @@ const StudentForm = ({studentFormInfo}) => {
     const [currentGrade, setCurrentGrade] = useState('');
     const [dob, setDob] = useState('');
 
-    const onSubmit = (e) => {
-        e.preventDefault()
+    const submitForm = (submitType) => {
         
-        studentFormInfo({id, firstname, lastname, currentGrade, dob})
+        studentFormInfo({id, firstname, lastname, currentGrade, dob}, submitType)
 
         setId('')
         setFirstName('')
@@ -22,7 +21,7 @@ const StudentForm = ({studentFormInfo}) => {
     }
   
   return (
-    <form onSubmit={onSubmit} className="bg-blue-100 p-4 rounded-lg shadow-md w-60 m-4">
+    <form className="bg-blue-100 p-4 rounded-lg shadow-md w-60 m-4">
             <h3 className='mb-2'>Add New Student</h3>
             
             <div className='flex justify-between mb-1'>
@@ -81,8 +80,9 @@ const StudentForm = ({studentFormInfo}) => {
             </div>
 
             <div className='flex flex-row justify-between mt-4'>
-            <input type='submit' value='Save' id='savebutton'/>
-            <button type='submit' value='Delete' id='deletebutton'/>
+            <button type='button' onClick={() => submitForm('Save')}>Save</button>
+            <button type='button' onClick={() => submitForm('Edit')}>Edit</button>
+            <button type='button' onClick={() => submitForm('Delete')}>Delete</button>
             </div>
         </form>
   )

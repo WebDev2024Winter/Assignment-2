@@ -3,7 +3,6 @@ import Link from "react-router-dom";
 
 const Navigation = () => {
   return (
-    // Navbar declaration
     <nav className='relative container mx-auto bg-blue-800 text-white p-6'>
         <div className="flex items-center justify-between">
 
@@ -15,7 +14,7 @@ const Navigation = () => {
 
           
           <div className='flex flex-row justify space-x-1'>
-            <input className='text-black p-2 rounded-xl'
+            <input className='text-black p-2 rounded-xl font-semibold'
             type='text'
             placeholder='Search'
             />
@@ -26,7 +25,7 @@ const Navigation = () => {
           <div className='flex-row space-x-12 mr-48 text-2xl font-semibold'>
         
             <a href="#">Home</a>
-            <a href="https:localhost:3000/Students">Students</a>
+            <a href="/Students">Students</a>
             <a href="#">Teaching and Learning</a>
             <a href="#">About Us</a>
         
