@@ -25,7 +25,7 @@ const StudentForm = ({studentFormInfo}) => {
             <h3 className='mb-2'>Add New Student</h3>
             
             <div className='flex justify-between mb-1'>
-                <span className="font-semibold">Id:</span>
+                <span className="font-semibold">ID:</span>
                 
                 <input className='w-20 text-right'
                     type='number'
