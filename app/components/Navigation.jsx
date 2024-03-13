@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from "react-router-dom";
 
 const Navigation = () => {
   return (
@@ -24,7 +23,7 @@ const Navigation = () => {
         
           <div className='flex-row space-x-12 mr-48 text-2xl font-semibold'>
         
-            <a href="#">Home</a>
+            <a href="/">Home</a>
             <a href="/Students">Students</a>
             <a href="#">Teaching and Learning</a>
             <a href="#">About Us</a>

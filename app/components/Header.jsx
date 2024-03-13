@@ -2,7 +2,7 @@ import React from 'react'
 
 const Header = () => {
   return (
-    <header>
+
         <div
         className="bg-[url('/HighSchool.jpg')] relative overflow-hidden bg-cover bg-center bg-no-repeat"
         style={{width: 'full', height: '300px'}}>
@@ -12,7 +12,6 @@ const Header = () => {
           </h1>
 
         </div>
-    </header>
   )
 }
 

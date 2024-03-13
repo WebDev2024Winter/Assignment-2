@@ -23,7 +23,7 @@ const Footer = () => {
 
           <div className='flex flex-col justify-between px-4 py-2 space-y-2'>
             <a href='#' className='text-white'>Home</a>
-            <a href='#' className='text-white'>Students</a>
+            <a href='/Students' className='text-white'>Students</a>
             <a href='#' className='text-white'>Community</a>
           </div>
 
