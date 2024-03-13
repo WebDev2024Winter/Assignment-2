@@ -3,18 +3,18 @@
 First, run the database server:
 
 CMD Line:
-npm run server
+"npm run server"
 or
-yarn server
+"yarn server"
 
 # Secondly
 
 Second, run the development server:
 
 CMD Line:
-npm run dev
+"npm run dev"
 or
-yarn dev
+"yarn dev"
 
 # Run Instructions
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the website.
